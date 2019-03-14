@@ -1,3 +1,5 @@
+/* Service detail page */
+
 body {
     color: #484848;
 }
@@ -214,3 +216,199 @@ div.action-bar div.see-date button:focus {
 div.action-bar div.see-date {
     margin-left: 60px;
 }
+
+/* See dates page */
+
+section#see-dates div.header {
+    height: 56px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(72, 72, 72, .1);
+    z-index: 100;
+    background-color: #fff;
+}
+section#see-dates div.header button:focus {
+    box-shadow: none;
+}
+section#see-dates div.header button > i.fa-times {
+    color: rgb(72, 72, 72, .7);
+}
+section#see-dates div.container-calendar {
+    margin-top: 56px;
+}
+section#see-dates div.container-calendar div.calendar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    position: fixed;
+    top: 50px;
+    left: 10%;
+}
+section#see-dates div.container-calendar div.container {
+    margin: -270px 0 0 -245px;
+}
+section#see-dates div.container-calendar div.date-info {
+    align-items: center;
+    padding-top: 0;
+}
+section#see-dates div.container-calendar div.date-info div.title {
+    width: 400px;
+    position: fixed;    
+    background-color: #fff;
+    padding-top: 50px;
+}
+section#see-dates div.container-calendar div.date-info div.detail {
+    width: 400px;
+}
+section#see-dates div.container-calendar div.date-info div.title p {
+    font-weight: bold;
+}
+section#see-dates div.container-calendar div.date-info div.title h2 {
+    font-weight: 400;
+}
+section#see-dates div.container-calendar div.date-info div.detail div.item {
+    margin: 15px 0 15px 0;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(72, 72, 72);
+    border-bottom: 1px solid rgb(72, 72, 72, .3);
+    padding-bottom: 15px;
+}
+section#see-dates div.container-calendar div.date-info div.detail div.item div.info {
+    justify-content: space-between;
+}
+section#see-dates div.container-calendar div.date-info div.detail div.item div.date {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+section#see-dates div.container-calendar div.date-info div.detail div.item div.date date {
+    border-bottom: 1px solid rgb(72, 72, 72, .3);
+    padding-bottom: 10px;
+}
+section#see-dates div.container-calendar div.date-info div.detail div.item button {
+    border: 2px solid #008489;
+    font-size: 16px;
+    font-weight: bold;
+    color: #008489;
+}
+section#see-dates div.container-calendar div.date-info div.detail div.item button:active {
+    color: #006a70;
+    background: rgba(0, 132, 137, 0.15);
+    border-color: rgb(0, 106, 112);
+}
+section#see-dates div.container-calendar div.date-info div.detail div.item button:focus {
+    box-shadow: none;
+}
+section#see-dates div.container-calendar div.calendar a {
+	text-decoration: none;
+}
+
+section#see-dates div.container-calendar div.calendar h2 {
+	font-size: 2em;
+	line-height: 1.25em;
+	margin: .25em 0;
+}
+
+section#see-dates div.container-calendar div.calendar h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin: .33em 0;
+}
+
+section#see-dates div.container-calendar div.calendar table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ---------- CALENDAR ---------- */
+
+section#see-dates div.container-calendar div.calendar {
+	text-align: center;
+}
+
+section#see-dates div.container-calendar div.calendar header {
+	position: relative;
+}
+
+section#see-dates div.container-calendar div.calendar h2 {
+	text-transform: uppercase;
+}
+
+section#see-dates div.container-calendar div.calendar thead {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+section#see-dates div.container-calendar div.calendar tbody {
+	color: #7c8a95;
+}
+
+section#see-dates div.container-calendar div.calendar tbody td:hover {
+	border: 2px solid #00addf;
+}
+
+section#see-dates div.container-calendar div.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	width: 4em;
+}
+section#see-dates div.container-calendar div.calendar td:hover {
+	cursor: pointer;
+}
+section#see-dates div.container-calendar div.calendar .booked,
+section#see-dates div.container-calendar div.calendar .next-month {
+	color: #cbd1d2;
+}
+section#see-dates div.container-calendar div.calendar td.day {
+    text-transform: capitalize;
+}
+section#see-dates div.container-calendar div.calendar .booked:hover {
+	border: 2px solid #cbd1d2;
+} 
+section#see-dates div.container-calendar div.calendar .booked:hover {
+    cursor: context-menu;
+}
+section#see-dates div.container-calendar div.calendar .current-day {
+	background: #00addf;
+	color: #f9f9f9;
+}
+
+section#see-dates div.container-calendar div.calendar td.current-day:after {
+	background: #f9f9f9;
+}
+
+section#see-dates div.container-calendar div.calendar .btn-prev,
+section#see-dates div.container-calendar div.calendar .btn-next {
+	border: 2px solid #cbd1d2;
+	border-radius: 50%;
+	color: #cbd1d2;
+	height: 2em;
+	font-size: .75em;
+	line-height: 2em;
+	margin: -1em;
+	position: absolute;
+	top: 50%;
+	width: 2em;
+}
+
+section#see-dates div.container-calendar div.calendar .btn-prev:hover,
+section#see-dates div.container-calendar div.calendar .btn-next:hover {
+	background: #cbd1d2;
+	color: #f9f9f9;
+}
+
+section#see-dates div.container-calendar div.calendar .btn-prev {
+	left: 6em;
+}
+
+section#see-dates div.container-calendar div.calendar .btn-next {
+	right: 6em;
+} 

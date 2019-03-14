@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Savian - Caregiver Booking Services</title>
+
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./../public/css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./../public/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./../public/css/main.css">
+   
+</head>
+<body>
+    <section id="see-dates">
+        <div class="container-fluid header">
+            <button class="btn"><i class="fas fa-times fa-2x"></i></button>
+        </div>
+        <div class="container-fluid container-calendar d-flex flex-row">
+            <div class="col-lg-6" >
+                <div class="calendar">
+                    <header>				
+                        <h4>September</h4>
+                        <a class="btn-prev fontawesome-angle-left" href="#"></a>
+                        <a class="btn-next fontawesome-angle-right" href="#"></a>
+                    </header>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="day">Mon</td>
+                                <td class="day">Tue</td>
+                                <td class="day">Wed</td>
+                                <td class="day">Thu</td>
+                                <td class="day">Fri</td>
+                                <td class="day">Sat</td>
+                                <td class="day">Sun</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="booked">26</td>
+                                <td class="booked">27</td>
+                                <td class="booked">28</td>
+                                <td class="booked">29</td>
+                                <td class="booked">30</td>
+                                <td class="booked">31</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                            </tr>
+        
+                            <tr>
+                                <td class="current-day">23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                            </tr>
+                            <tr>
+                                <td>30</td>
+                                <td class="booked">1</td>
+                                <td class="booked">2</td>
+                                <td class="booked">3</td>
+                                <td class="booked">4</td>
+                                <td class="booked">5</td>
+                                <td class="booked">6</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <!-- end calendar -->
+            </div>
+            <div class="col-lg-6">
+                <div class="d-flex flex-column date-info">
+                    <div class="title">
+                        <h2>Next available</h2>
+                        <p>Select dates to see availability.</p>
+                    </div>
+                    <div class="detail d-flex flex-column">
+                        <div class="item">
+                            <div class="date">
+                                <date>Wed, Mar 13</date>
+                            </div>
+                            <div class="info d-flex flex-row">
+                                <div class="d-flex flex-column">
+                                    <time>5:30 PM – 7:00 PM</time>
+                                    <price>100$ per hour</price>
+                                </div>
+                                <div class="btn-action">
+                                    <button class="btn">Choose</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="date">
+                                <date>Thu, Mar 14</date>
+                            </div>
+                            <div class="info d-flex flex-row">
+                                <div class="d-flex flex-column">
+                                    <time>5:30 PM – 7:00 PM</time>
+                                    <price>100$ per hour</price>
+                                </div>
+                                <div class="btn-action">
+                                    <button class="btn">Choose</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="date">
+                                <date>Fri, Mar 15</date>
+                            </div>
+                            <div class="info d-flex flex-row">
+                                <div class="d-flex flex-column">
+                                    <time>5:30 PM – 7:00 PM</time>
+                                    <price>100$ per hour</price>
+                                </div>
+                                <div class="btn-action">
+                                    <button class="btn">Choose</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="date">
+                                <date>Sat, Mar 16</date>
+                            </div>
+                            <div class="info d-flex flex-row">
+                                <div class="d-flex flex-column">
+                                    <time>5:30 PM – 7:00 PM</time>
+                                    <price>100$ per hour</price>
+                                </div>
+                                <div class="btn-action">
+                                    <button class="btn">Choose</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div> <!-- end container -->
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="./../public/js/jquery-3.3.1.min.js"></script>
+    <script src="./../public/js/popper.min.js"></script>
+    <script src="./../public/js/bootstrap.min.js"></script>
+    <script src="./../public/js/jquery.sticky-kit.min.js"></script>
+    <script src="./../public/js/main.js"></script>
+</body>
+</html>
