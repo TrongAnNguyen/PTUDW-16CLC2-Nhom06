@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Savian - Caregiver Booking Services</title>
+
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./../public/css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="./../public/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./../public/css/main.css">
+
+</head>
+<body>
+
+    <section id="confirm-booking">
+        <div class="container-fluid header d-flex flex-row">
+            <button class="btn logo"><img src="./../public/img/logo.png" alt=""></button>
+            <div class="avatar-container">
+                <button class="btn avatar"><img src="./../public/img/ava_An.jpg" alt=""></button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 review-detail">
+                    <h2>Review and pay</h2>
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <!-- Input contact name -->
+                            <div class="form-group">
+                                <label class="control-label" for="contact-name">
+                                    Contact name
+                                    <span>*</span>
+                                </label>  
+                                <div class="">
+                                    <input id="contact-name" name="contactName" type="text" class="form-control input-md" required>
+                                </div>
+                            </div>
+                            
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="control-label" for="contact-address">
+                                    Contact address
+                                    <span>*</span>
+                                </label>  
+                                <div class="">
+                                    <input id="contact-address" name="contactAddress" type="text" class="form-control input-md" required>
+                                </div>
+                            </div>
+                            
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="control-label" for="contact-number">
+                                    Contact number
+                                    <span>*</span>
+                                </label>  
+                                <div class="">
+                                    <input id="contact-number" name="contactNumber" type="text" class="form-control input-md" required>
+                                </div>
+                            </div>
+                            
+                            <!-- Textarea -->
+                            <div class="form-group">
+                                <label class="control-label" for="Note">Note</label>
+                                <div class="">                     
+                                    <textarea class="form-control" id="note" name="note"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-action">Confirm and pay</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-12 review-summary">
+                    <div class="summary-container">
+                        <div class="title-container">
+                            <div class="content">
+                                <div class="title">Children care</div>
+                                <div>Duration 3 hours</div>
+                                <div>Take care by MrRajnRuoj</div>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="./../public/img/childCare.jpg" alt="childCare">
+                            </div>
+                        </div>
+                        <div class="datetime">
+                            <div class="date">Friday, January 25th</div>
+                            <div class="time">5:00 AM<span> – </span>9:00 AM</div>
+                        </div>
+                        <div class="price">
+                            <div>100$ x 4 hours</div>
+                            <div>400$</div>
+                        </div>
+                        <div class="total">
+                            <div>Total (USD)</div>
+                            <div class="value">400$</div>
+                        </div>
+                        <div class="cancel">
+                            <div>Get a <span>full refund</span> if you cancel within 24 hours of purchase.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="./../public/js/jquery-3.3.1.min.js"></script>
+    <script src="./../public/js/popper.min.js"></script>
+    <script src="./../public/js/bootstrap.min.js"></script>
+    <script src="./../public/js/main.js"></script>
+</body>
+</html>

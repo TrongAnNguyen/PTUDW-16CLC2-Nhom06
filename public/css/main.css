@@ -18,138 +18,138 @@ div.navigation div button:focus {
 }
 
 /* Service detail */
-div.container.service-detail {
+section#service-detail div.container.service-detail {
     margin: 20px 48px;
     font-size: 18px;
     max-width: 90%;
 }
-div.container.service-detail div.service-name h2 {
+section#service-detail div.container.service-detail div.service-name h2 {
     font-weight: 700;
 }
-div.container.service-detail div.crop {
+section#service-detail div.container.service-detail div.crop {
     height: 500px;
     width: 374px;
 }
-div.container.service-detail div.service-type {
+section#service-detail div.container.service-detail div.service-type {
     font-weight: 500;
 }
-div.container.service-detail  div.row div.col-lg-8 > div.row.top-row{
+section#service-detail div.container.service-detail  div.row div.col-lg-8 > div.row.top-row{
     align-items: center;
     display: flex;
 }
-div.container.service-detail div.row.top-row button:focus {
+section#service-detail div.container.service-detail div.row.top-row button:focus {
     box-shadow: none;
 }
-div.container.service-detail div.location {
+section#service-detail div.container.service-detail div.location {
     align-items: center;
     margin-top: 20px;
     margin-bottom: 10px;
 }
-div.container.service-detail div.location span {
+section#service-detail div.container.service-detail div.location span {
     color: #008489;
     padding-left: 20px;
 }
-div.container.service-detail i.fa-map-marker-alt, i.fa-stopwatch, i.fa-comments {
+section#service-detail div.container.service-detail i.fa-map-marker-alt, i.fa-stopwatch, i.fa-comments {
     font-size: 1.3em;
 }
-div.container.service-detail div.duration {
+section#service-detail div.container.service-detail div.duration {
     margin-top: 10px;
     margin-bottom: 10px;
     align-items: center;
 }
-div.container.service-detail div.duration span {
+section#service-detail div.container.service-detail div.duration span {
     padding-left: 20px;
 }
-div.container.service-detail div.language {
+section#service-detail div.container.service-detail div.language {
     margin-top: 10px;
     margin-bottom: 10px;
     align-items: center;
 }
-div.container.service-detail div.language span {
+section#service-detail div.container.service-detail div.language span {
     padding-left: 15px;
 }
-div.container.service-detail div.about-cargiver p.title {
+section#service-detail div.container.service-detail div.about-cargiver p.title {
     font-weight: 500;
 }
-div.container.service-detail div.about-cargiver div.avatar > div {
+section#service-detail div.container.service-detail div.about-cargiver div.avatar > div {
     width: 190px;
     height:146px; 
     align-items: center;
 }
-div.container.service-detail div.about-cargiver div.avatar > div img {
+section#service-detail div.container.service-detail div.about-cargiver div.avatar > div img {
     width: 72px;
     height: 72px;
     border-radius: 36px;
 }
-div.container.service-detail div.about-cargiver div.avatar > div span.name {
+section#service-detail div.container.service-detail div.about-cargiver div.avatar > div span.name {
     margin-top: 20px;
     font-size: 16px;
     font-weight: 500;
 }
-div.container.service-detail div.about-cargiver div.avatar > div button.contact {
+section#service-detail div.container.service-detail div.about-cargiver div.avatar > div button.contact {
     color: #006C70;
 }
-div.container.service-detail div.about-cargiver div.avatar > div button.contact:focus {
+section#service-detail div.container.service-detail div.about-cargiver div.avatar > div button.contact:focus {
     box-shadow: none;
 }
-div.container.service-detail div.about-cargiver div.avatar > div button.contact:hover {
+section#service-detail div.container.service-detail div.about-cargiver div.avatar > div button.contact:hover {
     text-decoration: underline;
 }
-div.container.service-detail p.more-detail {
+section#service-detail div.container.service-detail p.more-detail {
     font-weight: 500;
 }
-div.container.service-detail p.should-know {
+section#service-detail div.container.service-detail p.should-know {
     font-weight: 500;
 }
 
 /* Review */
-div.container.service-detail div.review-title h2 {
+section#service-detail div.container.service-detail div.review-title h2 {
     font-weight: 700;
 }
-div.container.service-detail div.review-title div.rating-container {
+section#service-detail div.container.service-detail div.review-title div.rating-container {
     display: flex;
     align-items: center;
 }
-div.container.service-detail div.review-title div.rating-container span.rating {
+section#service-detail div.container.service-detail div.review-title div.rating-container span.rating {
     padding: 0 15px 0 20px;
     font-size: 20px;
     font-weight: bold;
 }
-div.container.service-detail div.review-title div.rating-container i.fa-star {
+section#service-detail div.container.service-detail div.review-title div.rating-container i.fa-star {
     color: #008489 ;
     padding: 0 3px;
 }
-div.container.service-detail div.review-body div.review-item img {
+section#service-detail div.container.service-detail div.review-body div.review-item img {
     width:48px;
     height: 48px;
     border-radius: 24px;
 }
-div.container.service-detail div.review-body div.review-item div.review-info {
+section#service-detail div.container.service-detail div.review-body div.review-item div.review-info {
     margin-left: 30px;
 }
-div.container.service-detail div.review-body div.review-item div.review-info span.reviewer-name {
+section#service-detail div.container.service-detail div.review-body div.review-item div.review-info span.reviewer-name {
     font-weight: bold;
     padding-right: 10px;
     font-size: 16px;
 }
-div.container.service-detail div.review-body div.review-item div.review-info span.reviewer-name:hover {
+section#service-detail div.container.service-detail div.review-body div.review-item div.review-info span.reviewer-name:hover {
     text-decoration: underline;
     cursor: pointer;
 }
-div.container.service-detail div.review-body div.review-item div.review-info span.join-time {
+section#service-detail div.container.service-detail div.review-body div.review-item div.review-info span.join-time {
     font-size: 14px;
 }
-div.container.service-detail div.review-body div.review-item div.review-info i.fa-star {
+section#service-detail div.container.service-detail div.review-body div.review-item div.review-info i.fa-star {
     color: #008489 ;
     font-size: 0.75em;
     padding: 5px 3px 0 0;
 }
-div.container.service-detail div.review-body div.review-item div.content {
+section#service-detail div.container.service-detail div.review-body div.review-item div.content {
     margin-top: 15px;
 }
 
 /* Action bar */
-div.action-bar {
+section#service-detail div.action-bar {
     height: 69px;
     background-color: #fff;
     position:sticky;
@@ -160,60 +160,64 @@ div.action-bar {
     display: flex;
     align-items: center;
 }
-div.action-bar div.info {
+section#service-detail div.action-bar div.info {
     margin-left: 28px;
 }
-div.action-bar img {
+section#service-detail div.action-bar img {
     width: 48px;
     height: 48px;
     border-radius: 24px;
 }
-div.action-bar div.agent-info {
+section#service-detail div.action-bar div.agent-info {
     margin-left: 10px;
     color: #008489;
 }
-div.action-bar div.agent-info span.type {
+section#service-detail div.action-bar div.agent-info span.type {
     font-weight: 500;
     font-size: 14px;
     color: #484848;
 }
-div.action-bar div.agent-info div.rating {
+section#service-detail div.action-bar div.agent-info div.rating {
     align-items: center;
 }
-div.action-bar div.agent-info span.rating {
+section#service-detail div.action-bar div.agent-info span.rating {
     font-size: 14px;
     font-weight: 500;
     padding-right: 5px;
 }
-div.action-bar div.agent-info i.fa-star {
+section#service-detail div.action-bar div.agent-info i.fa-star {
     font-size: 10px;
 }
-div.action-bar div.agent-info span.number-review {
+section#service-detail div.action-bar div.agent-info span.number-review {
     padding-left: 5px;
     font-size: 14px;
 }
-div.action-bar div.see-date {
+section#service-detail div.action-bar div.see-date {
     align-items: center;
 }
-div.action-bar div.see-date div.price span {
+section#service-detail div.action-bar div.see-date div.price span {
     font-weight: 700;
     font-size: 16px;
 }
-div.action-bar div.see-date button {
-    background-color: rgb(255, 90, 95) !important;
+section#service-detail div.action-bar div.see-date button {
+    background-color: rgb(255, 90, 95);
     height: 46px;
     width: 200px;
     margin-left: 20px;
     border: none;
     font-weight: bold;
 }
-div.action-bar div.see-date button:hover {
+section#service-detail div.action-bar div.see-date button:hover {
     border: none;
 }
-div.action-bar div.see-date button:focus {
+section#service-detail div.action-bar div.see-date button:focus {
     box-shadow: none;
+    outline: -webkit-focus-ring-color auto 5px;
 }
-div.action-bar div.see-date {
+section#service-detail div.action-bar div.see-date button:active {
+    background: rgb(223, 60, 71);
+}
+section#service-detail div.action-bar div.see-date {
     margin-left: 60px;
 }
 
@@ -412,3 +416,127 @@ section#see-dates div.container-calendar div.calendar .btn-prev {
 section#see-dates div.container-calendar div.calendar .btn-next {
 	right: 6em;
 } 
+
+/* Confirm booking page */
+section#confirm-booking div.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(72, 72, 72, .1);
+    z-index: 100;
+    background-color: #fff;
+}
+section#confirm-booking div.header button.logo img {
+    width: 40px;
+    height: 40px;
+}
+section#confirm-booking div.header div.avatar-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+section#confirm-booking div.header div.avatar-container:hover {
+    border-bottom: 2px solid rgb(118, 118, 118);
+}
+section#confirm-booking div.header div.avatar-container button.avatar img {
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+}
+section#confirm-booking div.container {
+    margin-top: 40px;
+}
+section#confirm-booking div.container div.review-detail {
+    padding-left: 3%;
+}
+section#confirm-booking div.container div.review-detail form {
+    margin-top: 30px;
+}
+section#confirm-booking div.container div.review-detail form label {
+    font-size: 18px;
+    font-weight: 600;
+}
+section#confirm-booking div.container div.review-detail form label span {
+    color: #e0714b;
+}
+section#confirm-booking div.container div.review-detail form input, textarea {
+    max-width: 70%;
+    border-radius: 4px;
+}
+section#confirm-booking div.container div.review-detail form input:focus {
+    box-shadow: none;
+    border: 1px solid rgb(0, 132, 137);
+}
+section#confirm-booking div.container div.review-detail form textarea:focus {
+    box-shadow: none;
+    border: 1px solid rgb(0, 132, 137);
+}
+section#confirm-booking div.container div.review-summary {
+    padding-left: 3%;
+}
+section#confirm-booking div.container div.review-summary div.summary-container {
+    width: 90%;
+    border: 1px solid rgb(228, 228, 228);
+    padding-left: 24px;
+    padding-right: 24px;
+
+}
+section#confirm-booking div.container div.review-summary div.summary-container div.title-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+}
+section#confirm-booking div.container div.review-summary div.summary-container div.title-container div.content div.title {
+    font-weight: 600;
+}
+section#confirm-booking div.container div.review-summary div.summary-container div.title-container div.thumbnail img {
+    width: 60px;
+    height: 94px;;
+}
+section#confirm-booking div.container div.review-summary div.summary-container div.datetime {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+section#confirm-booking div.container div.review-summary div.summary-container div.datetime div.time {
+    font-size: 14px;
+}
+section#confirm-booking div.container div.review-summary div.summary-container div.price, div.total {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    display: flex;
+    justify-content: space-between;
+}
+section#confirm-booking div.container div.review-summary div.summary-container div.total div.value {
+    font-weight: 800;
+}
+section#confirm-booking div.container div.review-summary div.summary-container div.cancel {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+section#confirm-booking div.container div.review-summary div.summary-container div.cancel span {
+    font-weight: 600;
+    color: rgb(72, 72, 72);
+}
+section#confirm-booking div.container button.btn-action {
+    width: 190px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    background-color: rgb(255, 90, 95);
+    border-color: transparent; 
+}
+section#confirm-booking div.container button.btn-action:focus {
+    box-shadow: none;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+section#confirm-booking div.container button.btn-action:active {
+    background: rgb(223, 60, 71);
+}
