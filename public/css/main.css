@@ -222,9 +222,12 @@ div.action-bar div.see-date {
     color: #fed136 !important;
   }
 
-header.masthead.btn {
-    font-family: 'Montserrat', -aheaderpple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    font-weight: 700;
+header.masthead a.btn {
+  background-color: rgba(0, 108, 112, 0);
+  border:1.5px solid rgb(247, 245, 245);
+  font-family: 'Montserrat', -aheaderpple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 500;
+  color:white;
   }
   
 header.masthead.btn-xl {
@@ -232,14 +235,9 @@ header.masthead.btn-xl {
     padding: 20px 40px;
   }
   
-header.masthead.btn-primary {
-    background-color: #fed136;
-    border-color: #fed136;
-  }
-  
-header.masthead.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-    background-color: #fec810 !important;
-    border-color: #fec810 !important;
+  header.masthead a.btn:active, a.btn:focus, a.btn:hover {
+    background-color: rgb(255, 90, 95) !important;
+    border-color: white !important;
     color: white;
   }
   
@@ -457,7 +455,7 @@ header.masthead{
   } 
   #special_service div.container a.btn{
     background-color: rgba(0, 108, 112, 0);
-    border:1.5px solid rgb(114, 101, 101);
+    border:1.5px solid rgb(247, 245, 245);
   }
 
   /* High Rating Agents */
@@ -514,7 +512,7 @@ header.masthead{
       text-transform: uppercase;
   }
   #footer {
-      background: #0c29a8e7!important;
+      background: rgb(255,90,95)!important;
   }
   #footer h5{
     padding-left: 10px;
