@@ -1,0 +1,50 @@
+body {
+    color: white;
+}
+/* Navbar */
+div.page-header.navbar.navbar-fixed-top div.page-header-inner div.page-logo {
+    background: rgb(255, 90, 95);
+}
+div.page-header.navbar.navbar-fixed-top div.page-header-inner div.page-logo img {
+    width: 35px;
+    height: 35px;
+}
+div.page-header.navbar.navbar-fixed-top div.page-header-inner div.top-menu ul li.dropdown-user img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Side bar */
+div.page-container div.sidebar-container div.sidemenu-container {
+    background: rgb(255, 90, 95);
+    position: fixed;
+    top: 60px;
+    bottom: 0;
+}
+div.page-container div.sidebar-container div.sidemenu-container li.sidebar-user-panel div.user-panel div.sidebar-userpic-name {
+    color: white;   
+}
+div.page-container div.sidebar-container div.sidemenu-container li.sidebar-user-panel div.user-panel div.profile-usertitle-job {
+    color: white;   
+}
+div.page-container div.sidebar-container div.sidemenu-container li.sidebar-user-panel div.user-panel div.sidebar-userpic-btn a {
+    color: white;
+}
+div.page-container div.sidebar-container li.sidebar-user-panel div.sidebar-userpic img {
+    width: 75px;
+    height: 75px;
+}
+.sidemenu-container .sidemenu>li>a, .sidemenu-closed.sidemenu-container-fixed .sidemenu-container:hover .sidemenu>li>a {
+    color: white;
+}
+.sidebar-userpic img {
+    border: 2px solid white;
+}
+.sidemenu-container .sidemenu>li.active.open>a, .sidemenu-container .sidemenu>li.active>a, .sidemenu-closed.sidemenu-container-fixed .sidemenu-container:hover .sidemenu>li.active.open>a, .sidemenu-closed.sidemenu-container-fixed .sidemenu-container:hover .sidemenu>li.active>a {
+    background-color: rgb(223, 60, 71);
+}
+.sidemenu-closed.sidemenu-container-fixed .sidemenu-container:hover .sidemenu>li.open>a,
+.sidemenu-closed.sidemenu-container-fixed .sidemenu-container:hover .sidemenu>li:hover>a {
+    background-color: rgba(223, 60, 71, 0.945);;
+    color: #fff;
+}
