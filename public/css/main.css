@@ -360,7 +360,7 @@ header.masthead{
   }
   #categories div.text-uppercase{
     color: rgba(0, 0, 0, 0.87);
-    margin-left: 100px;
+    margin-left: 115px;
     font-size: 55px;
     font-weight: 500;
     line-height: 75px;
@@ -409,6 +409,12 @@ header.masthead{
       border-radius: 40px;
       margin-top: 20px;
       margin-left:105px;
+  }
+  #transitional_care{
+    margin-left: -100px;
+  }
+  #children_care{
+    margin-left: -180px;
   }
   /* Blank */
   section.blank div.container{
@@ -468,14 +474,21 @@ header.masthead{
   }
 
   #high_rating_agents div.card img{
+    width: 255px;
+    height: 236px;
     border: none;
     border-radius: 0px;
   }
+  #high_rating_agents div.text-center{
+    margin-top: 30px;
+    margin-left: 40px;
+  }
   #high_rating_agents div.card-body{
-    margin-left: 83px;
+    padding-left: 0;
   }
   #high_rating_agents div.text-left{
-    width: 360px;
+    display: flex;
+    align-items: center;
     border: none;
     line-height: 5px;
   }
