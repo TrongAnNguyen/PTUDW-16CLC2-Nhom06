@@ -575,7 +575,9 @@ header.masthead.btn-primary:active, .btn-primary:focus {
 #mainNav {
     background-color: #212529;
   }
-  
+#mainNav.navbar-color-black li.nav-item > a.nav-link {
+    color: #484848;
+}
   #mainNav .navbar-toggler {
     font-size: 12px;
     right: 0;

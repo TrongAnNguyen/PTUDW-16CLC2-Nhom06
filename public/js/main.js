@@ -8,8 +8,10 @@ $(document).ready(function() {
 var navbarCollapse = function() {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
+      $("#mainNav").removeClass("navbar-color-black");
     } else {
       $("#mainNav").removeClass("navbar-shrink");
+      $("#mainNav").addClass("navbar-color-black");
     }
 };
 // Collapse now if page is not at top
