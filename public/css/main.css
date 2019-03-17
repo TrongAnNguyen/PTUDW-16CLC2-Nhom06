@@ -931,6 +931,8 @@ div.service {
 .service .intro {
     padding: 50px;
     padding-bottom: 10px;
+    margin-bottom: 30px;
+    padding-top: 0;
 }
 
 .service .intro-left {
@@ -1005,20 +1007,34 @@ div.service {
     font-weight: bold;
     color: #c22e28;
 }
-
+.service .vip-caregiver .info {
+    margin-left:80px;
+}
+.service .vip-caregiver .name{
+    color: rgb(2, 57, 158);
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight:600;
+    text-align: left;
+}
 .service .vip-caregiver .ideal {
+    color: black;
+    text-align: left;
     margin-top: -5px;
 }
 
 .service .vip-caregiver .price {
+    text-align: left;
     margin-top: -10px;
 }
 
 .service .vip-caregiver .rating {
+    text-align: left;
     margin-top: -10px;
 }
 
 .service .vip-caregiver .rating i{
+    text-align: left;
     color: #f7d02c;
 }
 
@@ -1034,20 +1050,34 @@ div.service {
     font-weight: bold;
     color: #c22e28;
 }
-
+.service .suggested-caregiver .info {
+    margin-left:80px;
+}
+.service .suggested-caregiver .name{
+    color: rgb(2, 57, 158);
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight:600;
+    text-align: left;
+}
 .service .suggested-caregiver .ideal {
+    color: black;
+    text-align: left;
     margin-top: -5px;
 }
 
 .service .suggested-caregiver .price {
+    text-align: left;
     margin-top: -10px;
 }
 
 .service .suggested-caregiver .rating {
+    text-align: left;
     margin-top: -10px;
 }
 
 .service .suggested-caregiver .rating i{
+    text-align: left;
     color: #f7d02c;
 }
 
