@@ -5,6 +5,9 @@ body {
 }
 
 /* Top navigation */
+div.container.navigation {
+    margin-top: 126px;
+}
 div.navigation i.fa-chevron-right {
     display: flex;
     align-items: center;
