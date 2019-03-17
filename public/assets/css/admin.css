@@ -48,3 +48,17 @@ div.page-container div.sidebar-container li.sidebar-user-panel div.sidebar-userp
     background-color: rgba(223, 60, 71, 0.945);;
     color: #fff;
 }
+
+/* Service detail */
+div.card.card-box div.card-body div.paging-detail-container {
+    display: flex;
+    align-items: center;
+}
+div.card.card-box div.card-body div.paging-detail-container div.paging-detail {
+    color: #212529;
+}
+div.card.card-box div.card-body div.paging-number-container {
+    display: flex;
+    justify-content: flex-end;
+}
+div.card.card-box div.card-body div.paging-number-container
