@@ -925,6 +925,9 @@ header.masthead{
   }
 
   /* Service */
+div.service {
+    margin-top: 126px;
+}
 .service .intro {
     padding: 50px;
     padding-bottom: 10px;
@@ -934,7 +937,10 @@ header.masthead{
     text-align: center;
     margin-left: -50px;
 }
-
+.service .intro-left div.row {
+    display: flex;
+    justify-content: center;
+}
 .service .intro-left img {
     padding-top: 30px;
     padding-bottom: 30px;
