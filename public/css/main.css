@@ -608,7 +608,10 @@ header.masthead.btn-primary:active, .btn-primary:focus {
   #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: #fed136;
   }
-  
+  #mainNav a.navbar-brand img {
+      width: 50px;
+      height: 50px;
+  }
   @media (min-width: 992px) {
     #mainNav {
       padding-top: 25px;

@@ -1,195 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Admin dashboard - Savian</title>
+    <title>Admin_Dashboard</title>
 
     <!-- Meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./../../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../../public/css/bootstrap.min.css">  
     <link href="./../../public/assets/plugins/summernote/summernote.css" rel="stylesheet">
 
-    <!-- Font Awesome CSS -->
+    <!-- Font CSS -->
+    <link href="./../../public/assets/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="./../../public/css/all.min.css">
 
     <!-- morris chart -->
     <link href="./../../public/assets/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
 
     <!-- animation -->
-    <link href="./../../public/assets/css/pages/animate_page.css" rel="stylesheet">
+	<link href="./../../public/assets/css/pages/animate_page.css" rel="stylesheet">
+
+    <!-- Material Design Lite CSS -->
+	<link rel="stylesheet" href="./../../public/assets/plugins/material/material.min.css">
+    <link rel="stylesheet" href="./../../public/assets/css/material_style.css">
     
     <!-- Template Styles -->
-    <link href="./../../public/assets/plugins/material/material.min.css" rel="stylesheet" type="text/css">
-    <link href="./../../public/assets/css/material_style.css" rel="stylesheet" type="text/css">
-    <link href="./../../public/assets/css/plugins.min.css" rel="stylesheet" type="text/css">
-    <link href="./../../public/assets/css/style.css" rel="stylesheet" type="text/css">
-    <link href="./../../public/assets/css/responsive.css" rel="stylesheet" type="text/css">
-    <link href="./../../public/assets/css/theme-color.css" rel="stylesheet" type="text/css">
+    <link href=./../../"public/assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="./../../public/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./../../public/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="./../../public/assets/css/theme-color.css" rel="stylesheet" type="text/css" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./../../public/assets/img/favicon.ico" /> 
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="./../../public/assets/css/admin.css">
+    <link rel="stylesheet" href="./../../public/css/main.css"> 
    
 </head>
-<body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white">
-    <div class="page-wrapper">
-        <!-- start header -->
-        <div class="page-header navbar navbar-fixed-top">
-            <div class="page-header-inner ">
-                <!-- logo start -->
-                <div class="page-logo">
-                    <a href="index.html">
-                    <img alt="" src="./../../public/img/logo.png">
-                    <span class="logo-default" >Savian</span> </a>
-                </div>
-                <!-- logo end -->
-                <form class="search-form-opened" action="#" method="GET">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search..." name="query">
-                        <span class="input-group-btn search-btn">
-                            <a href="javascript:;" class="btn submit">
-                                <i class="icon-magnifier"></i>
-                            </a>
-                        </span>
-                    </div>
-                </form>
-                
-                <!-- start header menu -->
-                <div class="top-menu">
-                    <ul class="nav navbar-nav pull-right">
-                        <!-- start notification dropdown -->
-                        <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <i class="far fa-bell"></i>
-                            </a>
-                        </li>
-                        <!-- end notification dropdown -->
-                        <!-- start message dropdown -->
-                        <li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
-                            <a href="" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <i class="far fa-envelope"></i>
-                            </a>
-                        </li>
-                        <!-- end message dropdown -->
-                        <!-- start manage user dropdown -->
-                        <li class="dropdown dropdown-user">
-                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <img alt="" class="img-circle" src="./../../public/img/ava_An.jpg" />
-                                <span class="username username-hide-on-mobile"> MrRajnRuoj </span>
-                                <i class="fa fa-angle-down"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-default animated jello">
-                                <li>
-                                    <a href="user_profile.html">
-                                        <i class="icon-user"></i> Profile </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="icon-settings"></i> Settings
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="icon-directions"></i> Help
-                                    </a>
-                                </li>
-                                <li class="divider"> </li>
-                                <li>
-                                    <a href="lock_screen.html">
-                                        <i class="icon-lock"></i> Lock
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="login.html">
-                                        <i class="icon-logout"></i> Log Out </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- end manage user dropdown -->
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- end header -->
 
-        <!-- start page container -->
-        <div class="page-container">
-            <!-- start sidebar menu -->
- 			<div id="sidebar" class="sidebar-container">
-                <div class="sidemenu-container navbar-collapse collapse fixed-menu">
-                    <div id="remove-scroll">
-                        <ul class="sidemenu page-header-fixed p-t-20" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
-                            <li class="sidebar-toggler-wrapper hide">
-                                <div class="sidebar-toggler">
-                                    <span></span>
-                                </div>
-                            </li>
-                            <li class="sidebar-user-panel">
-                                <div class="user-panel">
-                                    <div class="row">
-                                        <div class="sidebar-userpic">
-                                            <img src="./../../public/img/ava_An.jpg" class="img-responsive" alt=""> </div>
-                                        </div>
-                                        <div class="profile-usertitle">
-                                            <div class="sidebar-userpic-name"> MrRajnRuoj </div>
-                                            <div class="profile-usertitle-job"> Manager </div>
-                                        </div>
-                                        <div class="sidebar-userpic-btn">
-                                            <a class="tooltips" href="user_profile.html" data-placement="top" data-original-title="Profile">
-                                                <i class="material-icons">person_outline</i>
-                                            </a>
-                                            <a class="tooltips" href="email_inbox.html" data-placement="top" data-original-title="Mail">
-                                                <i class="material-icons">mail_outline</i>
-                                            </a>
-                                            <a class="tooltips" href="chat.html" data-placement="top" data-original-title="Chat">
-                                                <i class="material-icons">chat</i>
-                                            </a>
-                                            <a class="tooltips" href="login.html" data-placement="top" data-original-title="Logout">
-                                                <i class="material-icons">input</i>
-                                            </a>
-                                        </div>
-                                </div>
-                            </li>
-                            
-                            <li class="nav-item start active">
-                                <a href="#" class="nav-link nav-toggle">
-                                    <i class="material-icons">dashboard</i>
-                                    <span class="title">Dashboard</span>
-                                    <span class="selected"></span>
-                                </a>    
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link nav-toggle">
-                                    <i class="material-icons">show_chart</i>
-                                    <span class="title">Chart</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link nav-toggle">
-                                    <i class="material-icons">business_center</i>
-                                    <span class="title">Services</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link nav-toggle">
-                                    <i class="material-icons">group</i>
-                                    <span class="title">Staff</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link nav-toggle">
-                                    <i class="material-icons">history</i>
-                                    <span class="title">Booking history</span>
-                                </a>
-                            </li>
-                        </  ul>
-                    </div>
-                </div>
-            </div>
-            <!-- end sidebar menu -->
-            
+<body class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white dark-sidebar-color logo-dark">
+
+    <!-- start page container -->
+    <div class="page-container">
+        <!-- start sidebar menu -->
+        <div class="sidebar-container">
+            <!-- end sidebar menu --> 
             <!-- start page content -->
             <div class="page-content-wrapper">
                 <div class="page-content">
@@ -205,86 +65,86 @@
                             </ol>
                         </div>
                     </div>
-                <!-- start widget -->
+                    <!-- start widget -->
                     <div class="state-overview">
                         <header>This month Overview</header>
                         <div class="row">
                             <div class="col-xl-3 col-md-6 col-12">
-                            <div class="info-box bg-blue">
+                                <div class="info-box bg-blue">
                                 <span class="info-box-icon push-bottom"><i class="material-icons">style</i></span>
                                 <div class="info-box-content">
-                                <span class="info-box-text">Booking</span>
-                                <span class="info-box-number">450</span>
-                                <div class="progress">
+                                    <span class="info-box-text">Booking</span>
+                                    <span class="info-box-number">450</span>
+                                    <div class="progress">
                                     <div class="progress-bar width-60"></div>
-                                </div>
-                                <span class="progress-description">
+                                    </div>
+                                    <span class="progress-description">
                                         60% Increase 
-                                    </span>
+                                        </span>
                                 </div>
                                 <!-- /.info-box-content -->
-                            </div>
-                            <!-- /.info-box -->
+                                </div>
+                                <!-- /.info-box -->
                             </div>
                             <!-- /.col -->
                             <div class="col-xl-3 col-md-6 col-12">
-                            <div class="info-box bg-orange">
+                                <div class="info-box bg-orange">
                                 <span class="info-box-icon push-bottom"><i class="fas fa-users"></i></span>
                                 <div class="info-box-content">
-                                <span class="info-box-text">New Member</span>
-                                <span class="info-box-number">155</span>
-                                <div class="progress">
+                                    <span class="info-box-text">New Member</span>
+                                    <span class="info-box-number">155</span>
+                                    <div class="progress">
                                     <div class="progress-bar width-40"></div>
-                                </div>
-                                <span class="progress-description">
+                                    </div>
+                                    <span class="progress-description">
                                         40% Increase 
-                                    </span>
+                                        </span>
                                 </div>
                                 <!-- /.info-box-content -->
-                            </div>
-                            <!-- /.info-box -->
+                                </div>
+                                <!-- /.info-box -->
                             </div>
                             <!-- /.col -->
                             <div class="col-xl-3 col-md-6 col-12">
-                            <div class="info-box bg-purple">
+                                <div class="info-box bg-purple">
                                 <span class="info-box-icon push-bottom"><i class="far fa-comment-alt"></i></span>
                                 <div class="info-box-content">
-                                <span class="info-box-text">Review</span>
-                                <span class="info-box-number">52</span>
-                                <div class="progress">
+                                    <span class="info-box-text">Review</span>
+                                    <span class="info-box-number">52</span>
+                                    <div class="progress">
                                     <div class="progress-bar width-80"></div>
-                                </div>
-                                <span class="progress-description">
+                                    </div>
+                                    <span class="progress-description">
                                         80% Increase 
-                                    </span>
+                                        </span>
                                 </div>
                                 <!-- /.info-box-content -->
-                            </div>
-                            <!-- /.info-box -->
+                                </div>
+                                <!-- /.info-box -->
                             </div>
                             <!-- /.col -->
                             <div class="col-xl-3 col-md-6 col-12">
-                            <div class="info-box bg-success">
+                                <div class="info-box bg-success">
                                 <span class="info-box-icon push-bottom"><i class="material-icons">monetization_on</i></span>
                                 <div class="info-box-content">
-                                <span class="info-box-text">Total Earning</span>
-                                <span class="info-box-number"><span>$</span>3410</span>
-                                <div class="progress">
+                                    <span class="info-box-text">Total Earning</span>
+                                    <span class="info-box-number"><span>$</span>3410</span>
+                                    <div class="progress">
                                     <div class="progress-bar width-60"></div>
-                                </div>
-                                <span class="progress-description">
+                                    </div>
+                                    <span class="progress-description">
                                         60% Increase 
-                                    </span>
+                                        </span>
                                 </div>
                                 <!-- /.info-box-content -->
-                            </div>
-                            <!-- /.info-box -->
+                                </div>
+                                <!-- /.info-box -->
                             </div>
                             <!-- /.col -->
-                        </div>
+                            </div>
                         </div>
                     <!-- end widget -->
-                    <!-- chart start -->
+                        <!-- chart start -->
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card card-box">
@@ -315,32 +175,32 @@
                                             <p class="text-muted">This Year's Income</p>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div id="area_line_chart" class="width-100"></div>
+                                        <div class="row">
+                                            <div id="area_line_chart" class="width-100"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Chart end -->
+                        <!-- Chart end -->
                     <div class="row">
                         <div class="col-md-4 col-sm-12 col-12">
                             <div class="card bg-info">
                                 <div class="text-white py-3 px-4">
-                                <h6 class="card-title text-white mb-0">Page View</h6>
-                                <p>7582</p>
-                                <div id="sparkline26"></div>
-                                <a class="text-white small" href="#">View Details</a>
+                                    <h6 class="card-title text-white mb-0">Page View</h6>
+                                    <p>7582</p>
+                                    <div id="sparkline26"></div>
+                                    <a class="text-white small" href="#">View Details</a>
                                 </div>
-                            </div>
-                            <div class="card bg-success">
+                                </div>
+                                <div class="card bg-success">
                                 <div class="text-white py-3 px-4">
-                                <h6 class="card-title text-white mb-0">Earning</h6>
-                                <p>3669.25</p>
-                                <div id="sparkline27"></div>
-                                <a class="text-white small" href="#">View Details</a>
+                                    <h6 class="card-title text-white mb-0">Earning</h6>
+                                    <p>3669.25</p>
+                                    <div id="sparkline27"></div>
+                                    <a class="text-white small" href="#">View Details</a>
                                 </div>
-                            </div>
+                                </div>
                         </div>
                         <div class="col-md-4 col-sm-12 col-12">
                             <div class="card  card-box">
@@ -451,7 +311,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- start Payment Details -->
+                        <!-- start Payment Details -->
                     <div class="row">
                         <div class="col-md-12 col-sm-12">
                             <div class="card  card-box">
@@ -464,7 +324,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body ">
-                                <div class="table-wrap">
+                                    <div class="table-wrap">
                                         <div class="table-responsive">
                                             <table class="table display product-overview mb-30" id="support_table5">
                                                 <thead>
@@ -492,7 +352,7 @@
                                                         <td>Children Care</td>
                                                         <td>
                                                             <a href="edit_booTransitional Care.html" class="btn btn-tbl-edit btn-xs">
-                                                            <i class="fas fa-pencil-alt"></i>
+                                                                <i class="fas fa-pencil-alt"></i>
                                                             </a>
                                                             <button class="btn btn-tbl-delete btn-xs">
                                                                 <i class="far fa-trash-alt"></i>
@@ -511,7 +371,7 @@
                                                         <td>Elderly Care</td>
                                                         <td>
                                                             <a href="edit_booTransitional Care.html" class="btn btn-tbl-edit btn-xs">
-                                                            <i class="fas fa-pencil-alt"></i>
+                                                                <i class="fas fa-pencil-alt"></i>
                                                             </a>
                                                             <button class="btn btn-tbl-delete btn-xs">
                                                                 <i class="far fa-trash-alt"></i>
@@ -530,7 +390,7 @@
                                                         <td>Autism Care</td>
                                                         <td>
                                                             <a href="edit_booTransitional Care.html" class="btn btn-tbl-edit btn-xs">
-                                                            <i class="fas fa-pencil-alt"></i>
+                                                                <i class="fas fa-pencil-alt"></i>
                                                             </a>
                                                             <button class="btn btn-tbl-delete btn-xs">
                                                                 <i class="far fa-trash-alt"></i>
@@ -549,7 +409,7 @@
                                                         <td>Transitional Care</td>
                                                         <td>
                                                             <a href="edit_booTransitional Care.html" class="btn btn-tbl-edit btn-xs">
-                                                            <i class="fas fa-pencil-alt"></i>
+                                                                <i class="fas fa-pencil-alt"></i>
                                                             </a>
                                                             <button class="btn btn-tbl-delete btn-xs">
                                                                 <i class="far fa-trash-alt"></i>
@@ -568,7 +428,7 @@
                                                         <td>Children Care</td>
                                                         <td>
                                                             <a href="edit_booTransitional Care.html" class="btn btn-tbl-edit btn-xs">
-                                                            <i class="fas fa-pencil-alt"></i>
+                                                                <i class="fas fa-pencil-alt"></i>
                                                             </a>
                                                             <button class="btn btn-tbl-delete btn-xs">
                                                                 <i class="far fa-trash-alt"></i>
@@ -587,7 +447,7 @@
                                                         <td>Transitional Care</td>
                                                         <td>
                                                             <a href="edit_booTransitional Care.html" class="btn btn-tbl-edit btn-xs">
-                                                            <i class="fas fa-pencil-alt"></i>
+                                                                <i class="fas fa-pencil-alt"></i>
                                                             </a>
                                                             <button class="btn btn-tbl-delete btn-xs">
                                                                 <i class="far fa-trash-alt"></i>
@@ -606,7 +466,7 @@
                                                         <td>Children Care</td>
                                                         <td>
                                                             <a href="edit_booTransitional Care.html" class="btn btn-tbl-edit btn-xs">
-                                                            <i class="fas fa-pencil-alt"></i>
+                                                                <i class="fas fa-pencil-alt"></i>
                                                             </a>
                                                             <button class="btn btn-tbl-delete btn-xs">
                                                                 <i class="far fa-trash-alt"></i>
@@ -625,7 +485,7 @@
                                                         <td>Elderly Care</td>
                                                         <td>
                                                             <a href="edit_booTransitional Care.html" class="btn btn-tbl-edit btn-xs">
-                                                                <i class="fas fa-pencil-alt"></i>
+                                                                    <i class="fas fa-pencil-alt"></i>
                                                             </a>
                                                             <button class="btn btn-tbl-delete btn-xs">
                                                                 <i class="far fa-trash-alt"></i>
@@ -643,7 +503,7 @@
                     <!-- end Payment Details -->
                     <div class="row">
                             <div class="col-lg-8 col-md-12 col-sm-12 col-12">
-                                <div class="card-box ">
+                                    <div class="card-box ">
                                 <div class="card-head">
                                     <header>Guest Review</header>
                                     <div class="tools">
@@ -653,7 +513,7 @@
                                     </div>
                                 </div>
                                 <div class="card-body ">
-                                <div class="row">
+                                    <div class="row">
                                         <ul class="docListWindow small-slimscroll-style">
                                             <li>
                                                 <div class="row">
@@ -796,23 +656,23 @@
                             </div>
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 col-12">
-                            <div class="card-box">
-                                <div class="card-head">
-                                    <header>Todo List</header>
-                                    <button id = "panel-button" 
-                                        class = "mdl-button mdl-js-button mdl-button--icon pull-right" 
-                                        data-upgraded = ",MaterialButton">
-                                        <i class = "material-icons">more_vert</i>
+                                <div class="card-box">
+                                    <div class="card-head">
+                                        <header>Todo List</header>
+                                        <button id = "panel-button" 
+                                            class = "mdl-button mdl-js-button mdl-button--icon pull-right" 
+                                            data-upgraded = ",MaterialButton">
+                                            <i class = "material-icons">more_vert</i>
                                         </button>
                                         <ul class = "mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-                                        data-mdl-for = "panel-button">
-                                        <li class = "mdl-menu__item"><i class="material-icons">assistant_photo</i>Action</li>
-                                        <li class = "mdl-menu__item"><i class="material-icons">print</i>Another action</li>
-                                        <li class = "mdl-menu__item"><i class="material-icons">favorite</i>Something else here</li>
+                                            data-mdl-for = "panel-button">
+                                            <li class = "mdl-menu__item"><i class="material-icons">assistant_photo</i>Action</li>
+                                            <li class = "mdl-menu__item"><i class="material-icons">print</i>Another action</li>
+                                            <li class = "mdl-menu__item"><i class="material-icons">favorite</i>Something else here</li>
                                         </ul>
-                                </div>
-                                <div class="card-body ">
-                                    <ul class="to-do-list ui-sortable" id="sortable-todo">
+                                    </div>
+                                    <div class="card-body ">
+                                        <ul class="to-do-list ui-sortable" id="sortable-todo">
                                             <li class="clearfix d-flex flex-row">
                                                 <div class="todo-check pull-left ">
                                                     <input type="checkbox" value="None" id="todo-check1">
@@ -867,45 +727,120 @@
                                                 </div>
                                             </li>
                                         </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <!-- end page content -->
+            <!-- start chat sidebar -->
+            <div class="chat-sidebar-container" data-close-on-body-click="false">
+                <div class="chat-sidebar">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a href="#quick_sidebar_tab_1" class="nav-link active tab-icon"  data-toggle="tab">Theme
+                                </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#quick_sidebar_tab_2" class="nav-link tab-icon"  data-toggle="tab"> Chat
+                                </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#quick_sidebar_tab_3" class="nav-link tab-icon"  data-toggle="tab">  Settings
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane chat-sidebar-settings in show active animated shake" role="tabpanel" id="quick_sidebar_tab_1">
+                            <div class="slimscroll-style">
+                                <div class="theme-light-dark">
+                                    <h6>Sidebar Theme</h6>
+                                    <button type="button" data-theme="white" class="btn lightColor btn-outline btn-circle m-b-10 theme-button">Light Sidebar</button>
+                                    <button type="button" data-theme="dark" class="btn dark btn-outline btn-circle m-b-10 theme-button">Dark Sidebar</button>
+                                </div>
+                                <div class="theme-light-dark">
+                                    <h6>Sidebar Color</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="complete">
+                                            <div class="theme-color sidebar-theme">
+                                                <a href="#" data-theme="white"><span class="head"></span><span class="cont"></span></a>
+                                                <a href="#" data-theme="dark"><span class="head"></span><span class="cont"></span></a>
+                                                <a href="#" data-theme="blue"><span class="head"></span><span class="cont"></span></a>
+                                                <a href="#" data-theme="indigo"><span class="head"></span><span class="cont"></span></a>
+                                                <a href="#" data-theme="cyan"><span class="head"></span><span class="cont"></span></a>
+                                                <a href="#" data-theme="green"><span class="head"></span><span class="cont"></span></a>
+                                                <a href="#" data-theme="red"><span class="head"></span><span class="cont"></span></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <h6>Header Brand color</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="theme-option">
+                                            <div class="theme-color logo-theme">
+                                                    <a href="#" data-theme="logo-white"><span class="head"></span><span class="cont"></span></a>
+                                                <a href="#" data-theme="logo-dark"><span class="head"></span><span class="cont"></span></a>
+                                                <a href="#" data-theme="logo-blue"><span class="head"></span><span class="cont"></span></a>
+                                                <a href="#" data-theme="logo-indigo"><span class="head"></span><span class="cont"></span></a>
+                                                <a href="#" data-theme="logo-cyan"><span class="head"></span><span class="cont"></span></a>
+                                                <a href="#" data-theme="logo-green"><span class="head"></span><span class="cont"></span></a>
+                                                <a href="#" data-theme="logo-red"><span class="head"></span><span class="cont"></span></a>
+                                                </div>
+                                        </li>
+                                    </ul>
+                                    <h6>Header color</h6>
+                                    <ul class="list-unstyled">
+                                        <li class="theme-option">
+                                            <div class="theme-color header-theme">
+                                                    <a href="#" data-theme="header-white"><span class="head"></span><span class="cont"></span></a>
+                                                    <a href="#" data-theme="header-dark"><span class="head"></span><span class="cont"></span></a>
+                                                    <a href="#" data-theme="header-blue"><span class="head"></span><span class="cont"></span></a>
+                                                    <a href="#" data-theme="header-indigo"><span class="head"></span><span class="cont"></span></a>
+                                                    <a href="#" data-theme="header-cyan"><span class="head"></span><span class="cont"></span></a>
+                                                    <a href="#" data-theme="header-green"><span class="head"></span><span class="cont"></span></a>
+                                                    <a href="#" data-theme="header-red"><span class="head"></span><span class="cont"></span></a>
+                                                </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- end page content -->
-            <!-- start footer -->
-            <div class="page-footer">
-                <div class="page-footer-inner"> 2019 &copy; Savina, Inc. </div>
-                <div class="scroll-to-top">
-                    <i class="icon-arrow-up"></i>
-                </div>
-            </div>
-            <!-- end footer -->
+            <!-- end chat sidebar -->
         </div>
+        <!-- end page container -->
+        <!-- start footer -->
+        <div class="page-footer">
+            <div class="page-footer-inner"> 2019 &copy; Savina, Inc. </div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+        <!-- end footer -->
     </div>
-        
+<!-- start js include path -->
+<script src="./../../public/assets/plugins/jquery/jquery.min.js" ></script>
+<script src="./../../public/assets/plugins/popper/popper.min.js" ></script>
+<script src="./../../public/assets/plugins/jquery-blockui/jquery.blockui.min.js" ></script>
+<script src="./../../public/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- bootstrap -->
+<script src="./../../public/assets/plugins/bootstrap/js/bootstrap.min.js" ></script>
+<script src="./../../public/assets/plugins/sparkline/jquery.sparkline.min.js" ></script>
+<script src="./../../public/assets/js/pages/sparkline/sparkline-data.js" ></script>
+<!-- Common js-->
+<script src="./../../public/assets/js/app.js" ></script>
+<script src="./../../public/assets/js/layout.js" ></script>
+<script src="./../../public/assets/js/theme-color.js" ></script>
+<!-- material -->
+<script src="./../../public/assets/plugins/material/material.min.js"></script>
+<!-- animation -->
+<script src="./../../public/assets/js/pages/ui/animations.js" ></script>
+<!-- morris chart -->
+<script src="./../../public/assets/plugins/morris/morris.min.js" ></script>
+<script src="./../../public/assets/plugins/morris/raphael-min.js" ></script>
+<script src="./../../public/assets/js/pages/chart/morris/morris_home_data.js" ></script>
 
-    <!-- start js include path -->
-    <script src="./../../public/assets/plugins/jquery/jquery.min.js" ></script>
-    <script src="./../../public/assets/plugins/popper/popper.min.js" ></script>
-    <script src="./../../public/assets/plugins/jquery-blockui/jquery.blockui.min.js" ></script>
-    <script src="./../../public/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <!-- bootstrap -->
-    <script src="./../../public/assets/plugins/bootstrap/js/bootstrap.min.js" ></script>
-    <script src="./../../public/assets/plugins/sparkline/jquery.sparkline.min.js" ></script>
-    <script src="./../../public/assets/js/pages/sparkline/sparkline-data.js" ></script>
-    <!-- Common js-->
-    <script src="./../../public/assets/js/app.js" ></script>
-    <script src="./../../public/assets/js/layout.js" ></script>
-    <script src="./../../public/assets/js/theme-color.js" ></script>
-    <!-- material -->
-    <script src="./../../public/assets/plugins/material/material.min.js"></script>
-    <!-- animation -->
-    <script src="./../../public/assets/js/pages/ui/animations.js" ></script>
-    <!-- morris chart -->
-    <script src="./../../public/assets/plugins/morris/morris.min.js" ></script>
-    <script src="./../../public/assets/plugins/morris/raphael-min.js" ></script>
-    <script src="./../../public/assets/js/pages/chart/morris/morris_home_data.js" ></script>
 </body>
 </html>

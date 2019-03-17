@@ -1,6 +1,3 @@
-body {
-    color: white;
-}
 /* Navbar */
 div.page-header.navbar.navbar-fixed-top div.page-header-inner div.page-logo {
     background: rgb(255, 90, 95);
@@ -61,4 +58,6 @@ div.card.card-box div.card-body div.paging-number-container {
     display: flex;
     justify-content: flex-end;
 }
-div.card.card-box div.card-body div.paging-number-container
+div.page-footer div.page-footer-inner {
+    color: white;
+}
