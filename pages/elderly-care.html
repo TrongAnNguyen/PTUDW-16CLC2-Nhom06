@@ -9,13 +9,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="public/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../public/css/bootstrap.min.css">
     
         <!-- Font Awesome CSS -->
-        <link rel="stylesheet" href="public/css/all.min.css">
+        <link rel="stylesheet" href="./../public/css/all.min.css">
     
         <!-- Main CSS -->
-        <link rel="stylesheet" href="public/css/main.css">
+        <link rel="stylesheet" href="./../public/css/main.css">
        
     </head>
     <body>
@@ -23,7 +23,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-color-black" id="mainNav">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <p><img src="public/img/logo.png" alt="Logo" /></p>
+                        <p><img src="./../public/img/logo.png" alt="Logo" /></p>
                     </a>
                             
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,7 +54,7 @@
             <div class="intro row">
                 <div class="intro-left col">
                     <div class="row">
-                        <img src="public/img/elderly-care.jpg" alt="">
+                        <img src="./../public/img/elderly-care.jpg" alt="">
                     </div>
                     <a href="#search-bar"><button>Find a caregiver</button></a>
                 </div>
@@ -101,7 +101,7 @@
                 <h2>VIP Caregivers</h2>
                 <div class="row">
                     <div class="col">
-                        <img src="public/img/service_vip-caregiver-01.jpg" alt="">
+                        <img src="./../public/img/service_vip-caregiver-01.jpg" alt="">
                         <div class="info">
                             <a href="" style="text-align: left"><p class="name">Hiacinta Lekić - Helsinki, Finland</p></a>
                             <p class="ideal">Good skills, having certifications in medical!</p>
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <img src="public/img/service_vip-caregiver-02.jpg" alt="">
+                        <img src="./../public/img/service_vip-caregiver-02.jpg" alt="">
                         <div class="info">
                             <a href="" style="text-align: left"><p class="name">Long Chen - Beijing, China</p></a>
                             <p class="ideal">5-year experience, real doctor, work in freetime.</p>
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <img src="public/img/service_vip-caregiver-03.jpg" alt="">
+                        <img src="./../public/img/service_vip-caregiver-03.jpg" alt="">
                         <div class="info">
                             <a href="" style="text-align: left"><p class="name">Krunal Sojitra - Mumbai, India</p></a>
                             <p class="ideal">Very good at elderly care.</p>
@@ -134,7 +134,7 @@
                     <h2>Suggested Caregivers</h2>
                     <div class="row">
                         <div class="col">
-                            <img src="public/img/service_suggested-caregiver-01.jpg" alt="">
+                            <img src="./../public/img/service_suggested-caregiver-01.jpg" alt="">
                             <div class="info">
                                 <a href="" style="text-align: left"><p class="name">Wade A. Ascencio - London, England</p></a>
                                 <p class="ideal">10 years doing elderly care.</p>
@@ -143,7 +143,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <img src="public/img/service_suggested-caregiver-02.jpg" alt="">
+                            <img src="./../public/img/service_suggested-caregiver-02.jpg" alt="">
                             <div class="info">
                                 <a href="" style="text-align: left"><p class="name">Phillip S. Rutledge - California, USA</p></a>
                                 <p class="ideal">New caregiver, friendly, careful.</p>
@@ -152,7 +152,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <img src="public/img/service_suggested-caregiver-03.jpg" alt="">
+                            <img src="./../public/img/service_suggested-caregiver-03.jpg" alt="">
                             <div class="info">
                                 <a href="" style="text-align: left"><p class="name">Andrée Racicot - Paris, France</p></a>
                                 <p class="ideal">3 year experience.</p>
@@ -216,9 +216,31 @@
         </div>    
         
         <!-- JavaScript -->
-        <script src="public/js/jquery-3.3.1.min.js"></script>
-        <script src="public/js/popper.min.js"></script>
-        <script src="public/js/bootstrap.min.js"></script>
-        <script src="public/js/main.js"></script>
+        <script src="./../public/js/jquery-3.3.1.min.js"></script>
+        <script src="./../public/js/popper.min.js"></script>
+        <script src="./../public/js/bootstrap.min.js"></script>
+        <script>
+            var navbarCollapse = function() {
+                if ($("#mainNav").offset().top > 100) {
+                    $("#mainNav").addClass("navbar-shrink");
+                    $("#mainNav").removeClass("navbar-color-black");
+                } else {
+                    $("#mainNav").removeClass("navbar-shrink");
+                    $("#mainNav").addClass("navbar-color-black");
+                }
+            };
+            // Collapse now if page is not at top
+            navbarCollapse();
+            // Collapse the navbar when page is scrolled
+            $(window).scroll(navbarCollapse);
+
+            // Hide navbar when modals trigger
+            $('.portfolio-modal').on('show.bs.modal', function(e) {
+                $('.navbar').addClass('d-none');
+            });
+            $('.portfolio-modal').on('hidden.bs.modal', function(e) {
+                $('.navbar').removeClass('d-none');
+            });
+        </script>
     </body>
 </html>
