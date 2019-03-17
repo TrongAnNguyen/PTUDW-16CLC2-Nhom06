@@ -2696,9 +2696,8 @@ form.search-form-opened .btn.submit {
 }
 .page-bar .page-breadcrumb {
     display: inline-block;
-    float: left;
+    margin-top: -50px;
     padding: 8px;
-    margin: 0;
     list-style: none;
     background-color: transparent;
     border-radius: 50px;
@@ -2730,6 +2729,10 @@ form.search-form-opened .btn.submit {
     display: inline-block;
     float: right;
     padding: 0
+}
+.page-title-breadcrumb{
+    display: flex;
+    justify-content: space-between;
 }
 .page-title-breadcrumb .breadcrumb li+li:before {
     content: "";
@@ -7681,7 +7684,7 @@ nav-tabs>li {
 .scroll-to-top {
     padding: 11px;
     border-radius: 4px;
-    background: #1c262f;
+    background: rgb(255, 90, 96);
     text-align: center;
     position: fixed;
     bottom: 10px;
@@ -7713,7 +7716,7 @@ nav-tabs>li {
     color: #98a6ba;
 }
 .page-footer-fixed .page-footer {
-    background-color: #28303b;
+    background-color: rgb(255, 90, 95);
 }
 .page-footer-fixed.page-footer-fixed-mobile .page-container {
     margin-bottom: 20px !important
@@ -7721,7 +7724,7 @@ nav-tabs>li {
 .page-footer {
     padding: 20px 5px;
     font-size: 13px;
-    background-color: #222c3c;
+    background-color: rgb(255, 90, 95);
 }
 .page-footer:after,
 .page-footer:before {
@@ -8361,4 +8364,27 @@ span.notificationtime {
 .selector-title{
 	margin-top: 0px !important; 
 	color: #000000;
+}
+/* Overview*/
+div.state-overview header{
+    color: #3a405b;
+    display: inline-block;
+    padding: 11px 20px;
+    vertical-align: middle;
+    line-height: 17px;
+    font-size: 20px;
+    margin-left: 3px;
+    font-weight: 600;
+    font-size: 20px;
+}
+#date-picker{
+    color: #222c3c;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+    border: 2px solid rgb(5, 5, 5);
+}
+#date-picker header{
+    font-weight: 600;
+    font-size:20px;
 }
