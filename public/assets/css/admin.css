@@ -61,3 +61,7 @@ div.card.card-box div.card-body div.paging-number-container {
 div.page-footer div.page-footer-inner {
     color: white;
 }
+div#admin-profile div.profile-sidebar div.profile-userpic img {
+    width: 130px;
+    height: 130px;
+}
