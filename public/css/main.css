@@ -845,8 +845,52 @@ header.masthead{
     color:gold;
   }
   
-  /* Footer */
+  /* Modal */
+  .pb-modalreglog-container
+      {
+          margin-top: 100px;
+      }
+  
+      .pb-modalreglog-legend
+      {
+          color: black;
+          font-size: 20px;
+          text-align: left;
+      }
+  
+      .pb-modalreglog-input-group
+      {
+          margin: auto;
+      }
+  
+      .pb-modalreglog-submit
+      {
+          margin-left: 5px;
+      }
+  
+      .pb-modalreglog-form-reg
+      {
+        color: black;
+        font-size: 20px;
+        text-align: left;
+      }
 
+    div.modal div.form #facebook{
+        background-color: #0c29a8;
+        color: white;
+    }
+    div.modal div.form #google{
+        background-color: #db2121c7;
+        color: white;
+    }
+    #login-footer{
+        display: flex;
+        justify-content: safe;
+    }
+    #login-email, #login-password{
+        color: black;
+        font-size: 20px;
+    }
   /* Footer */
   section#footer {
       padding: 40px 0px 0px 200px;
