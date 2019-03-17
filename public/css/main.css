@@ -1,0 +1,102 @@
+.service .intro {
+    padding: 20px;
+}
+
+.service .intro-left {
+    float: left;
+    padding: 10px;
+    padding-top: 30px;
+    width: 37.5%;
+}
+
+.service .intro-left img {
+    width: 100%;
+    border: solid #cccccc 5px;
+}
+
+.service .intro-right {
+    float: right;
+    width: 57.5%;
+    text-align: left;
+}
+
+.service .intro-right h1 {
+    font-weight: bold;
+}
+
+.service .intro-right .slogan {
+    font-style: italic;
+}
+
+.service .intro-right h3 {
+    color: #CB0783;
+    font-weight: bold;
+}
+
+.about-us .banner {
+    background-color: #cccccc;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/about-us_banner.jpg");
+    height: 500px;
+    color: #ffffff;
+}
+
+.about-us .banner h1 {
+    padding-top: 200px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.about-us .banner p {
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-us .slogan {
+    text-align: center;
+    padding: 50px;
+    border-bottom: solid #cccccc 1px;
+    padding-bottom: 20px;
+}
+
+.about-us .slogan h2 {
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.about-us .slogan p {
+    color: #808080;
+}
+
+.about-us .slogan .row .col{
+    padding: 20px;
+}
+
+.about-us .slogan .row .col img {
+    width: 100%;
+}
+
+.about-us .slogan .row .col h4 {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.about-us .team {
+    padding: 30px 100px;
+    text-align: center;
+}
+
+.about-us .team h2 {
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.about-us .team .row .col h4 {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.about-us .team .row .col .phone-number {
+    color: #008000;
+}
