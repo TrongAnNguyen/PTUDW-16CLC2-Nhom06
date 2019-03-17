@@ -921,3 +921,193 @@ header.masthead{
   #footer div.col-xs-12.col-sm-12.col-md-12.mt-2.mt-sm-2.text-center.text-white{
     margin-left: -140px;
   }
+
+  /* Service */
+.service .intro {
+    padding: 50px;
+    padding-bottom: 10px;
+}
+
+.service .intro-left {
+    text-align: center;
+    margin-left: -50px;
+}
+
+.service .intro-left img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.service .intro-left button {
+    padding: 10px 50px;
+    border-radius: 20px;
+    background: #cf8c7b;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #c8c8c8;
+}
+
+.service .intro-right {
+    text-align: left;
+    margin-left: -30px;
+}
+
+.service .intro-right h1 {
+    font-weight: bold;
+}
+
+.service .intro-right .slogan {
+    font-style: italic;
+}
+
+.service .intro-right h3 {
+    color: #CB0783;
+    font-weight: bold;
+}
+
+.service .search-bar {
+    padding: 20px;
+    text-align: center;
+}
+
+.service .search-bar .search-field {
+    border-radius: 20px;
+    padding: 10px 100px;
+    border: 1px solid #c8c8c8;
+}
+
+.service .search-bar button {
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 1px solid #c8c8c8;
+    background: #ff5a5f;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.service .vip-caregiver {
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.service .vip-caregiver h2 {
+    text-align: left;
+    padding: 20px;
+    margin-left: -50px;
+    font-weight: bold;
+    color: #c22e28;
+}
+
+.service .vip-caregiver .ideal {
+    margin-top: -5px;
+}
+
+.service .vip-caregiver .price {
+    margin-top: -10px;
+}
+
+.service .vip-caregiver .rating {
+    margin-top: -10px;
+}
+
+.service .vip-caregiver .rating i{
+    color: #f7d02c;
+}
+
+.service .suggested-caregiver {
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.service .suggested-caregiver h2 {
+    text-align: left;
+    padding: 20px;
+    margin-left: -50px;
+    font-weight: bold;
+    color: #c22e28;
+}
+
+.service .suggested-caregiver .ideal {
+    margin-top: -5px;
+}
+
+.service .suggested-caregiver .price {
+    margin-top: -10px;
+}
+
+.service .suggested-caregiver .rating {
+    margin-top: -10px;
+}
+
+.service .suggested-caregiver .rating i{
+    color: #f7d02c;
+}
+
+/* About us */
+.about-us .banner {
+    background-color: #cccccc;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/about-us_banner.jpg");
+    height: 500px;
+    color: #ffffff;
+}
+
+.about-us .banner h1 {
+    padding-top: 200px;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.about-us .banner p {
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.about-us .slogan {
+    text-align: center;
+    padding: 50px;
+    border-bottom: solid #cccccc 1px;
+    padding-bottom: 20px;
+}
+
+.about-us .slogan h2 {
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.about-us .slogan p {
+    color: #808080;
+}
+
+.about-us .slogan .row .col{
+    padding: 20px;
+}
+
+.about-us .slogan .row .col img {
+    width: 100%;
+}
+
+.about-us .slogan .row .col h4 {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.about-us .team {
+    padding: 30px 100px;
+    text-align: center;
+}
+
+.about-us .team h2 {
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.about-us .team .row .col h4 {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.about-us .team .row .col .phone-number {
+    color: #008000;
+}
