@@ -269,6 +269,7 @@ section#see-dates div.container-calendar div.date-info div.title {
 }
 section#see-dates div.container-calendar div.date-info div.detail {
     width: 400px;
+    margin-top: 136px;
 }
 section#see-dates div.container-calendar div.date-info div.title p {
     font-weight: bold;
