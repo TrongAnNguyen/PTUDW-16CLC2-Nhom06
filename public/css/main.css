@@ -1,23 +1,31 @@
+/* Service */
 .service .intro {
-    padding: 20px;
+    padding: 50px;
+    padding-bottom: 10px;
 }
 
 .service .intro-left {
-    float: left;
-    padding: 10px;
-    padding-top: 30px;
-    width: 37.5%;
+    text-align: center;
+    margin-left: -50px;
 }
 
 .service .intro-left img {
-    width: 100%;
-    border: solid #cccccc 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.service .intro-left button {
+    padding: 10px 50px;
+    border-radius: 20px;
+    background: #cf8c7b;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #c8c8c8;
 }
 
 .service .intro-right {
-    float: right;
-    width: 57.5%;
     text-align: left;
+    margin-left: -30px;
 }
 
 .service .intro-right h1 {
@@ -33,6 +41,85 @@
     font-weight: bold;
 }
 
+.service .search-bar {
+    padding: 20px;
+    text-align: center;
+}
+
+.service .search-bar .search-field {
+    border-radius: 20px;
+    padding: 10px 100px;
+    border: 1px solid #c8c8c8;
+}
+
+.service .search-bar button {
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 1px solid #c8c8c8;
+    background: #ff5a5f;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.service .vip-caregiver {
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.service .vip-caregiver h2 {
+    text-align: left;
+    padding: 20px;
+    margin-left: -50px;
+    font-weight: bold;
+    color: #c22e28;
+}
+
+.service .vip-caregiver .ideal {
+    margin-top: -5px;
+}
+
+.service .vip-caregiver .price {
+    margin-top: -10px;
+}
+
+.service .vip-caregiver .rating {
+    margin-top: -10px;
+}
+
+.service .vip-caregiver .rating i{
+    color: #f7d02c;
+}
+
+.service .suggested-caregiver {
+    text-align: center;
+    padding: 20px 100px;
+}
+
+.service .suggested-caregiver h2 {
+    text-align: left;
+    padding: 20px;
+    margin-left: -50px;
+    font-weight: bold;
+    color: #c22e28;
+}
+
+.service .suggested-caregiver .ideal {
+    margin-top: -5px;
+}
+
+.service .suggested-caregiver .price {
+    margin-top: -10px;
+}
+
+.service .suggested-caregiver .rating {
+    margin-top: -10px;
+}
+
+.service .suggested-caregiver .rating i{
+    color: #f7d02c;
+}
+
+/* About us */
 .about-us .banner {
     background-color: #cccccc;
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../img/about-us_banner.jpg");
